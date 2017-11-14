@@ -214,27 +214,25 @@ void Ventana::mousePressEvent(QMouseEvent *e)
 
 void Ventana::dimensionarWidget()  {
 
-    ui->pb_update->resize(this->width()/3,this->height()/5);
+   ui->pb_update->resize(this->width()/3,this->height()/12);
     ui->pb_update->move(this->width()/3,this->height()- ui->pb_update->height());
 
-    ui->cb_categories->resize(this->width()/7,this->height()/7);
-    ui->cb_categories->move(this->width()- ui->cb_categories->width(),0);
+    ui->cb_categories->resize(this->width()/3,this->height()/10);
+    ui->cb_categories->move(this->width()-ui->cb_categories->width(),0);
 
-    ui->le_search->resize(this->width()-ui->cb_categories->width(),this->height()/7);
+    ui->le_search->resize(this->width()-ui->cb_categories->width(),this->height()/10);
     ui->le_search->move(0,0);
-
 
     ui->lw_listplaces->resize(this->width(),this->height()/5);
     ui->lw_listplaces->move(0,this->height()-ui->pb_update->height()-ui->lw_listplaces->height());
 
-    ui->datos_Lugar->resize(this->width()/3,this->height()/3);
-    ui->datos_Lugar->move(this->width()/3,this->height()-ui->pb_update->height()-ui->lw_listplaces->height()-ui->datos_Lugar->height());
+    //ui->datos_Lugar->resize(this->width(),this->height()/5);
+    //ui->datos_Lugar->move(0,this->height()-ui->pb_update->height()-ui->lw_listplaces->height());
 
-    ui->TimeAndDistance->resize(this->width()/3,this->height()/10);
-    ui->TimeAndDistance->move(0,this->height()-ui->pb_update->height()-ui->lw_listplaces->height()-ui->datos_Lugar->height()-ui->TimeAndDistance->height());
+    ui->datos_Lugar->move(0,this->height()-ui->pb_update->height()-ui->lw_listplaces->height()-ui->datos_Lugar->height());
 
-    ui->pb_ver->resize(this->width()/15,this->height()/15);
-    ui->pb_ver->move(this->width()- ui->pb_ver->width(),ui->le_search->height() + ui->pb_ver->height());
+    ui->TimeAndDistance->resize(this->width()/3,this->height()/18);
+    ui->TimeAndDistance->move(this->width()/10,this->height()-ui->pb_update->height()-ui->lw_listplaces->height()-ui->datos_Lugar->height()-ui->TimeAndDistance->height());
 }
 
 void Ventana::resizeEvent(QResizeEvent *e)
