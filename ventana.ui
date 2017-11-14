@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Ventana</class>
+ <widget class="QWidget" name="Ventana">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>480</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::NoFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>NigthApp</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Version Clase generica/NightAppBeta v5.7/NightAppBETA/recursos/images/gafasman.jpg</normaloff>../Version Clase generica/NightAppBeta v5.7/NightAppBETA/recursos/images/gafasman.jpg</iconset>
+  </property>
+  <widget class="QListWidget" name="lw_listplaces">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>390</y>
+     <width>256</width>
+     <height>192</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+  </widget>
+  <widget class="QDockWidget" name="datos_Lugar">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>240</y>
+     <width>274</width>
+     <height>113</height>
+    </rect>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);</string>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::NoDockWidgetFeatures</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::NoDockWidgetArea</set>
+   </property>
+   <property name="windowTitle">
+    <string>DATOS DEL LUGAR</string>
+   </property>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <widget class="QListWidget" name="lw_listcharac">
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pb_update">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>70</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-image: url(:/root/Recursos/images/botonfondof.png);</string>
+   </property>
+   <property name="text">
+    <string>LOCALIZAR</string>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="cb_categories">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>30</y>
+     <width>86</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <item>
+    <property name="text">
+     <string>Seleccionar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Bar</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Boliche</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Restaurante</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Casino</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Museo</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Teatro</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="LineaDeTexto" name="le_search">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>30</y>
+     <width>133</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(85, 170, 255);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="inputMethodHints">
+    <set>Qt::ImhNone</set>
+   </property>
+   <property name="frame">
+    <bool>true</bool>
+   </property>
+   <property name="dragEnabled">
+    <bool>false</bool>
+   </property>
+   <property name="placeholderText">
+    <string>Buscar...</string>
+   </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TimeAndDistance">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>90</y>
+     <width>121</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pb_ver">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>20</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ver</string>
+   </property>
+  </widget>
+  <zorder>cb_categories</zorder>
+  <zorder>le_search</zorder>
+  <zorder>lw_listplaces</zorder>
+  <zorder>datos_Lugar</zorder>
+  <zorder>pb_update</zorder>
+  <zorder>TimeAndDistance</zorder>
+  <zorder>pb_ver</zorder>
+  <zorder>lw_listcharac</zorder>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>LineaDeTexto</class>
+   <extends>QLineEdit</extends>
+   <header location="global">lineadetexto.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

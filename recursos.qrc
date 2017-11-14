@@ -1,0 +1,38 @@
+<RCC>
+    <qresource prefix="/root">
+        <file>Recursos/images/62508.jpg</file>
+        <file>Recursos/images/baar.jpg</file>
+        <file>Recursos/images/bar.jpg</file>
+        <file>Recursos/images/boliche.jpg</file>
+        <file>Recursos/images/bolichee.jpg</file>
+        <file>Recursos/images/brujula.png</file>
+        <file>Recursos/images/copasman.png</file>
+        <file>Recursos/images/degrade.jpg</file>
+        <file>Recursos/images/degrade2.jpg</file>
+        <file>Recursos/images/degrade3.jpg</file>
+        <file>Recursos/images/fiesta.jpg</file>
+        <file>Recursos/images/fondo.jpg</file>
+        <file>Recursos/images/fondocolores.jpg</file>
+        <file>Recursos/images/fondocolores2.png</file>
+        <file>Recursos/images/fondoform.jpg</file>
+        <file>Recursos/images/fondoLogin.jpg</file>
+        <file>Recursos/images/fondoo.jpg</file>
+        <file>Recursos/images/gafasman.jpg</file>
+        <file>Recursos/images/iconoGPS.png</file>
+        <file>Recursos/images/info.jpg</file>
+        <file>Recursos/images/noojo.png</file>
+        <file>Recursos/images/ojo.png</file>
+        <file>Recursos/images/plano.png</file>
+        <file>Recursos/images/planocolor.png</file>
+        <file>Recursos/images/stargafas.jpg</file>
+        <file>Recursos/images/startsilueta.jpg</file>
+        <file>Recursos/images/startsilueta2.jpg</file>
+        <file>Recursos/images/startsiluetablue.jpg</file>
+        <file>Recursos/images/startsiluetaDK.jpg</file>
+        <file>Recursos/images/startsiluetawhite.jpg</file>
+        <file>Recursos/images/tecnico.jpg</file>
+        <file>Recursos/database/usuarios.sqlite</file>
+        <file>Recursos/palabras/palabras.txt</file>
+        <file>Recursos/images/botonfondof.png</file>
+    </qresource>
+</RCC>
