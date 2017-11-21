@@ -181,3 +181,4 @@ void Ventana::resizeEvent(QResizeEvent *e)
 {
     dimensionarWidget();
 }
+ 
