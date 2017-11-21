@@ -37,49 +37,6 @@
 color: rgb(255, 255, 255);</string>
    </property>
   </widget>
-  <widget class="QDockWidget" name="datos_Lugar">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>240</y>
-     <width>274</width>
-     <height>113</height>
-    </rect>
-   </property>
-   <property name="contextMenuPolicy">
-    <enum>Qt::DefaultContextMenu</enum>
-   </property>
-   <property name="layoutDirection">
-    <enum>Qt::LeftToRight</enum>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(85, 170, 255);</string>
-   </property>
-   <property name="floating">
-    <bool>false</bool>
-   </property>
-   <property name="features">
-    <set>QDockWidget::NoDockWidgetFeatures</set>
-   </property>
-   <property name="allowedAreas">
-    <set>Qt::NoDockWidgetArea</set>
-   </property>
-   <property name="windowTitle">
-    <string>DATOS DEL LUGAR</string>
-   </property>
-   <widget class="QWidget" name="dockWidgetContents">
-    <layout class="QGridLayout" name="gridLayout_2">
-     <item row="0" column="0">
-      <widget class="QListWidget" name="lw_listcharac">
-       <property name="styleSheet">
-        <string notr="true">color: rgb(255, 255, 255);
-</string>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
-  </widget>
   <widget class="QPushButton" name="pb_update">
    <property name="geometry">
     <rect>
@@ -203,33 +160,35 @@ color: rgb(255, 255, 255);</string>
     <string>TextLabel</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pb_ver">
+  <widget class="Informacion" name="info" native="true">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>20</y>
-     <width>75</width>
-     <height>23</height>
+     <x>310</x>
+     <y>240</y>
+     <width>120</width>
+     <height>80</height>
     </rect>
-   </property>
-   <property name="text">
-    <string>Ver</string>
    </property>
   </widget>
   <zorder>cb_categories</zorder>
   <zorder>le_search</zorder>
   <zorder>lw_listplaces</zorder>
-  <zorder>datos_Lugar</zorder>
   <zorder>pb_update</zorder>
   <zorder>TimeAndDistance</zorder>
-  <zorder>pb_ver</zorder>
   <zorder>lw_listcharac</zorder>
+  <zorder>info</zorder>
  </widget>
  <customwidgets>
   <customwidget>
    <class>LineaDeTexto</class>
    <extends>QLineEdit</extends>
-   <header location="global">lineadetexto.h</header>
+   <header>lineadetexto.h</header>
+  </customwidget>
+  <customwidget>
+   <class>Informacion</class>
+   <extends>QWidget</extends>
+   <header>informacion.h</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>

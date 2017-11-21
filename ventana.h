@@ -15,9 +15,7 @@
 #include <QTimer>
 #include <QMessageBox>
 #include <QTreeWidget>
-
 #include <QMouseEvent>
-#include <QTextEdit>
 
 
 namespace Ui {
@@ -34,7 +32,7 @@ public:
     void paintEvent(QPaintEvent *);
 
     void SetListadoLugares(QStringList lugares);
-    void SetInfoLugar(QStringList info);
+    void SetInfoLugar(QStringList info2);
     void SetDistancia(QString distancia);
     void SetMapa(QImage im);
 
@@ -52,14 +50,10 @@ private:
     QImage imMap;
     int zoom = 10;
     QTimer *timer;
-    QTimer *timer2;
     QTreeWidget *popup;
-
-    QTextEdit *teInfo;
     int tam;
-
-
     void dimensionarWidget();
+
 signals:
     void signal_IniciaBusqueda();
     void signal_IniciaInfo(QModelIndex );
@@ -70,8 +64,6 @@ private slots:
     void slot_ActualizaPos();
     void slot_ActivaListado(QModelIndex index);
     void slot_time();
-    void hola2();
-    void slot_time2();
 
 protected:
     void mouseDoubleClickEvent(QMouseEvent *e);
