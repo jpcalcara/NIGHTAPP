@@ -11,6 +11,9 @@
 #include <QTime>
 #include <QTimer>
 #include <QResizeEvent>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+#include <QNetworkRequest>
 
 namespace Ui {
 class Start;
@@ -28,8 +31,9 @@ public:
 private:
     Ui::Start *ui;
     QImage im_fondoStart;
-    QTimer * timer;
-    int counter;
+    QTimer *timer;
+    int counter, intentos;
+    QNetworkAccessManager *manager;
 
 signals:
     void signal_ready(bool);
@@ -44,6 +48,8 @@ private slots:
      * @brief slot_updateProgressBar  actualiza la barra de progreso al cargar la app
      */
     void slot_updateProgressBar();
+
+    void slot_procesarConexion(QNetworkReply *reply);
 };
 
 #endif // START_H
